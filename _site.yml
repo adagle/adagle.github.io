@@ -4,7 +4,7 @@ navbar:
   title: "Alicia B. Dagle"
   left:
     - text: "Research"
-      href: research.html
+      href: publications.html
     - text: "Publications"
       href: publications.html
     - text: "Presentations"

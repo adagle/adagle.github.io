@@ -5,6 +5,8 @@ navbar:
   left:
     - text: "Resume"
       href: resume.html
+    - text: "Other Interests"
+      href: interests.html
   right:
     - text: "About"
       href: about.html

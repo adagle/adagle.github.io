@@ -1,0 +1,14 @@
+---
+title: "Other Interests"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+# Ballroom Dancing
+
+Outside of research and studying, I am heavily involved in competative ballroom dance. I compete International Standard and American Smooth Styles at the Prechampionship level in collegiate and national competitions.
+
+
+<img src="images/StandardPhotoCrop.jpg" style="width:40%; border:10px solid; margin-right: 20px" align="left">

@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Design Process - PACO</title>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		
+		<link id="wsite-base-style" rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/sites.css?buildTime=1234" />
+<link rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/old/fancybox.css?1234" />
+<link rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/social-icons.css?buildtime=1234" media="screen,projection" />
+<link rel="stylesheet" type="text/css" href="files/main_style.css?1524109758" title="wsite-theme-css" />
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+
+<style type='text/css'>
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{}
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{}
+#wsite-title {}
+.wsite-menu-default a {}
+.wsite-menu a {}
+.wsite-image div, .wsite-caption {}
+.galleryCaptionInnerText {}
+.fancybox-title {}
+.wslide-caption-text {}
+.wsite-phone {}
+.wsite-headline,.wsite-header-section .wsite-content-title {}
+.wsite-headline-paragraph,.wsite-header-section .paragraph {}
+.wsite-button-inner {}
+.wsite-not-footer blockquote {}
+.wsite-footer blockquote {}
+.blog-header h2 a {}
+#wsite-content h2.wsite-product-title {}
+.wsite-product .wsite-product-price a {}
+@media screen and (min-width: 767px) {.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{}
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{}
+#wsite-title {}
+.wsite-menu-default a {}
+.wsite-menu a {}
+.wsite-image div, .wsite-caption {}
+.galleryCaptionInnerText {}
+.fancybox-title {}
+.wslide-caption-text {}
+.wsite-phone {}
+.wsite-headline,.wsite-header-section .wsite-content-title {}
+.wsite-headline-paragraph,.wsite-header-section .paragraph {}
+.wsite-button-inner {}
+.wsite-not-footer blockquote {}
+.wsite-footer blockquote {}
+.blog-header h2 a {}
+#wsite-content h2.wsite-product-title {}
+.wsite-product .wsite-product-price a {}
+}</style>
+
+		<script>
+var STATIC_BASE = '//cdn1.editmysite.com/';
+var ASSETS_BASE = '//cdn2.editmysite.com/';
+var STYLE_PREFIX = 'wsite';
+</script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+
+<script type="text/javascript" src="http://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"></script>
+<script src="http://cdn2.editmysite.com/js/site/main.js?buildTime=1234"></script><script type="text/javascript">_W.configDomain = "www.weebly.com";</script><script>_W.relinquish && _W.relinquish()</script>
+<script type="text/javascript" src="http://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"></script><script> _W.themePlugins = [];</script><script type="text/javascript"> _W.recaptchaUrl = "https://www.google.com/recaptcha/api.js"; </script><script type="text/javascript"> window._W = window._W || {}; _W.showV2Footer = 1; </script><script type="text/javascript"><!--
+	var IS_ARCHIVE = 1;
+	
+	function initFlyouts(){
+		initPublishedFlyoutMenus(
+			[{"id":"140124126712379458","title":"Home","url":"index.html","target":"","nav_menu":false,"nonclickable":false},{"id":"528820182610916230","title":"About the Team","url":"about-the-team.html","target":"","nav_menu":false,"nonclickable":false},{"id":"522152728569855811","title":"CAD Drawings","url":"cad-drawings.html","target":"","nav_menu":false,"nonclickable":false},{"id":"208531059732084018","title":"Design Process","url":"design-process.html","target":"","nav_menu":false,"nonclickable":false},{"id":"357158172116832353","title":"Contact","url":"contact.html","target":"","nav_menu":false,"nonclickable":false}],
+			"208531059732084018",
+			'',
+			'active',
+			false,
+			{"navigation\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}} class=\"wsite-menu-item-wrap\">\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\t{{#membership_required}}\n\t\t\tdata-membership-required=\"{{.}}\"\n\t\t{{\/membership_required}}\n\t\tclass=\"wsite-menu-item\"\n\t\t>\n\t\t{{{title_html}}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n","navigation\/flyout\/list":"<div class=\"wsite-menu-wrap\" style=\"display:none\">\n\t<ul class=\"wsite-menu\">\n\t\t{{#children}}{{> navigation\/flyout\/item}}{{\/children}}\n\t<\/ul>\n<\/div>\n","navigation\/flyout\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}}\n\tclass=\"wsite-menu-subitem-wrap {{#is_current}}wsite-nav-current{{\/is_current}}\"\n\t>\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\tclass=\"wsite-menu-subitem\"\n\t\t>\n\t\t<span class=\"wsite-menu-title\">\n\t\t\t{{{title_html}}}\n\t\t<\/span>{{#has_children}}<span class=\"wsite-menu-arrow\">&gt;<\/span>{{\/has_children}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n"},
+			{}
+		)
+	}
+//-->
+</script>
+		
+		<script type="text/javascript">(function(d,s,id){var z=d.createElement(s);z.type="text/javascript";z.id=id;z.async=true;z.src="http://static.zotabox.com/6/9/6972ea4fe8e76a20caa3b853ee786fd5/widgets.js";var sz=d.getElementsByTagName(s)[0];sz.parentNode.insertBefore(z,sz)}(document,"script","zb-embed-code"));</script>
+	</head>
+	<body class="no-header-page  wsite-page-design-process  wsite-theme-light"><div class="wrapper">
+    <div class="cento-header">
+      <div class="nav-wrap">
+        <div class="container">
+          <label class="hamburger"><span></span></label>
+          <div class="logo"><span class="wsite-logo">
+
+	<a href="">
+	
+	<span id="wsite-title">PACO</span>
+	
+	</a>
+
+</span></div>
+          <div class="nav desktop-nav"><div class="container"><ul class="wsite-menu-default">
+		<li id="pg140124126712379458" class="wsite-menu-item-wrap">
+			<a
+						href="index.html"
+				class="wsite-menu-item"
+				>
+				Home
+			</a>
+			
+		</li>
+		<li id="pg528820182610916230" class="wsite-menu-item-wrap">
+			<a
+						href="about-the-team.html"
+				class="wsite-menu-item"
+				>
+				About the Team
+			</a>
+			
+		</li>
+		<li id="pg522152728569855811" class="wsite-menu-item-wrap">
+			<a
+						href="cad-drawings.html"
+				class="wsite-menu-item"
+				>
+				CAD Drawings
+			</a>
+			
+		</li>
+		<li id="active" class="wsite-menu-item-wrap">
+			<a
+						href="design-process.html"
+				class="wsite-menu-item"
+				>
+				Design Process
+			</a>
+			
+		</li>
+		<li id="pg357158172116832353" class="wsite-menu-item-wrap">
+			<a
+						href="contact.html"
+				class="wsite-menu-item"
+				>
+				Contact
+			</a>
+			
+		</li>
+</ul>
+</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-wrap">
+      <div id="wsite-content" class="wsite-elements wsite-not-footer">
+	<div class="wsite-section-wrap">
+	<div class="wsite-section wsite-body-section wsite-section-bg-color wsite-background-11" style="background-color: #f8f8f8;background-image: none;is_customized: 1;" >
+		<div class="wsite-section-content">
+          <div class="container">
+			<div class="wsite-section-elements">
+				<div id="366299351567504680"><div><style type="text/css">
+	#element-f7cea7a7-550f-4793-bfe3-e701d7f8226b .group-box-content {
+  clear: both;
+  float: left;
+  width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+</style><div id="element-f7cea7a7-550f-4793-bfe3-e701d7f8226b" data-platform-element-id="751043798673526236-1.0.1" class="platform-element-contents">
+	<div class="group-box">
+    <div class="group-box-content">
+        <div style="width: auto"><div></div><div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+					
+						
+
+<h2 class="wsite-content-title">Leg Design &amp; Dynamics Calculations<br /><br /></h2>
+
+<div class="paragraph">&#8203;Paco has 6 C-shaped fiberglass legs, which can be modeled as mass-less linear springs that bend under compression. By measuring the compressed length of the leg under the load-bearing force (weight of the robot), it is possible to derive a spring constant. Then, the dimensions of the robot can be used to calculate the force and torque on Paco's center of mass as a function of angular position.</div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:right">
+<a>
+<img src="uploads/1/1/8/8/118889699/dynamics_orig.png" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div></div>
+    </div>
+</div>
+</div>
+<div style="clear:both;"></div><script type="text/javascript" class="element-script">function setupElement366299351567504680() {
+	var requireFunc = window.platformElementRequire || window.require;
+
+	// Relies on a global require, specific to platform elements
+	requireFunc([
+		'w-global',
+		'underscore',
+		'jquery',
+		'backbone',
+		'util/platform/elements/PlatformElement',
+		'util/platform/elements/PlatformElementSettings'
+	], function(
+		_W,
+		_,
+		$,
+		Backbone,
+		PlatformElement,
+		PlatformElementSettings
+	) {
+		var dependencies = null || [];
+		var platform_element_id = "751043798673526236-1.0.1";
+
+		if (typeof _W.loadedPlatformDependencies === 'undefined') {
+			_W.loadedPlatformDependencies = [];
+		}
+
+		if (typeof _W.platformElements === 'undefined') {
+			_W.platformElements = [];
+		}
+
+		if (typeof _W.platformElements[platform_element_id] === 'undefined') {
+			_W.platformElements[platform_element_id] = {};
+			_W.platformElements[platform_element_id].deferredObject = new $.Deferred();
+			_W.platformElements[platform_element_id].deferredPromise = _W.platformElements[platform_element_id].deferredObject.promise();
+		}
+
+		if(_.intersection(_W.loadedPlatformDependencies, dependencies).length !== dependencies.length){
+			_.reduce(dependencies, function(promise, nextScript){
+				_W.loadedPlatformDependencies.push(nextScript);
+				return promise.then(function(){
+					return $.getScript(nextScript);
+				});
+			}, $().promise()).then(function(){
+				_W.platformElements[platform_element_id].deferredObject.resolve();
+			});
+		}
+
+		if (dependencies.length === 0){
+			_W.platformElements[platform_element_id].deferredObject.resolve();
+		}
+
+		_W.platformElements[platform_element_id].deferredPromise.done(function(){
+			var _ElementDefinition = /**
+ * This is required for element rendering to be possible
+ * @type {PlatformElement}
+ */
+(function() {
+    var ColoredBox = PlatformElement.extend({
+
+        initialize: function() {
+        }
+
+    });
+
+    return ColoredBox;
+})();
+
+			if (typeof _ElementDefinition == 'undefined' || typeof _ElementDefinition == 'null') {
+				var _ElementDefinition = PlatformElement.extend({});
+			}
+
+			var _Element = _ElementDefinition.extend({
+				initialize: function() {
+					// we still want to call the initialize function defined by the developer
+					// however, we don't want to call it until placeholders have been replaced
+					this.placeholderInterval = setInterval(function() {
+						// so use setInterval to check for placeholders.
+						if (this.$('.platform-element-child-placeholder').length == 0) {
+							clearInterval(this.placeholderInterval);
+							this.constructor.__super__.initialize.apply(this);
+						}
+					}.bind(this), 100);
+				}
+			});
+
+			_Element.prototype.settings = new PlatformElementSettings({"color":"#000000","opacity":20});
+			_Element.prototype.settings.page_element_id = "366299351567504680";
+
+			_Element.prototype.element_id = "f7cea7a7-550f-4793-bfe3-e701d7f8226b";
+			_Element.prototype.user_id = "118889699";
+			_Element.prototype.site_id = "691041926121705084";
+			_Element.prototype.assets_path = "//marketplace.editmysite.com/elements/751043798673526236-1.0.1/assets/";
+			new _Element({
+				el: '#element-f7cea7a7-550f-4793-bfe3-e701d7f8226b'
+			});
+		});
+	});
+
+}
+
+if (typeof document.documentElement.appReady == 'undefined') {
+	document.documentElement.appReady = 0;
+}
+
+if (document.documentElement.appReady || (window.inEditor && window.inEditor())) {
+	setupElement366299351567504680();
+} else if (document.createEvent && document.addEventListener) {
+	document.addEventListener('appReady', setupElement366299351567504680, false);
+} else {
+	document.documentElement.attachEvent('onpropertychange', function(event){
+		if (event.propertyName == 'appReady') {
+			setupElement366299351567504680();
+		}
+	});
+}
+
+</script></div></div>
+
+<div><div style="height: 20px; overflow: hidden; width: 100%;"></div>
+<hr class="styled-hr" style="width:100%;"></hr>
+<div style="height: 20px; overflow: hidden; width: 100%;"></div></div>
+
+<h2 class="wsite-content-title" style="text-align:left;"><em>Leg Dimensions and Stress Analysis</em></h2>
+
+<div class="paragraph"><strong>&#8203;</strong><span>The robot legs are nearly semicircles with a slight extension on both ends for the attachment and foot contact point. The sizes of the legs were carefully determined and tested in simulations in accordance with the following diagram:</span></div>
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+<a>
+<img src="uploads/1/1/8/8/118889699/leg-sizing-and-shaping_orig.png" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+<div class="paragraph">SolidWorks was used to determine a preliminary spring constant, k, of the legs as well as the change in length corresponding to the compression length of the spring system. Built in SolidWorks Simulation tools were used to measure the stresses and deformation of the leg subject to a load of 10 lbf, approximately 1/3 the weight of the robot. This simplification assumes that each leg will support approximately an equal weight of the robot as the robot walks in an alternating tripod gait, meaning 3 legs should be in contact with the wheel at any given time.<br /><br />For simulation purposes, the leg was fixed at the point where it attaches to the leg clamp and hinges to the leg shafts extending from the motors. The load modeled is the ground normal force pointing upwards, supporting the weight of the body on the leg. Computational analysis results indicated k is approximately 10308.74 N/m and compressed length is 4.315 mm. These results are shown in the figure below. Notably, Fiberglass is a custom made material with properties that vary depending on the fiberglass sheets and resin used. Therefore, Solidworks provides an imperfect model for measuring material properties and merely serves as a guide. These results could be determined more accurately by applying a 10 lbf load to an individual leg, measuring the compression along the diameter axis and using a spring force equation to derive a corresponding k value.&nbsp;</div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:left">
+<a>
+<img src="uploads/1/1/8/8/118889699/leg-displacement-analysis_orig.png" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="uploads/1/1/8/8/118889699/published/leg-stress-analysis.png?1524101516" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<div><div style="height: 20px; overflow: hidden; width: 100%;"></div>
+<hr class="styled-hr" style="width:100%;"></hr>
+<div style="height: 20px; overflow: hidden; width: 100%;"></div></div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:49.999999999999%; padding:0 15px;">
+					
+						
+
+<h2 class="wsite-content-title">Force, Torque, and Dynamics Calculations:</h2>
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:0px;padding-bottom:0px;margin-left:0px;margin-right:0px;text-align:center">
+<a>
+<img src="uploads/1/1/8/8/118889699/leg-forces_orig.png" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:49.999999999999%; padding:0 15px;">
+					
+						
+
+<span class='imgPusher' style='float:right;height:0px'></span><span style='display: table;width:219px;position:relative;float:right;max-width:100%;;clear:right;margin-top:0px;*margin-top:0px'><a><img src="uploads/1/1/8/8/118889699/published/spring-ground-force.png?1524089561" style="margin-top: 10px; margin-bottom: 10px; margin-left: 0px; margin-right: 10px; border-width:0; max-width:100%" alt="Picture" class="galleryImageBorder wsite-image" /></a><span style="display: table-caption; caption-side: bottom; font-size: 90%; margin-top: -10px; margin-bottom: 10px; text-align: center;" class="wsite-caption"></span></span>
+<div class="paragraph" style="display:block;">The spring force and ground force on each leg (shown on left) can be calculated using the following equations (right). The ground reaction force here is a vector sum of the friction force and the normal force due to gravity.&nbsp;<br /><br /></div>
+<hr style="width:100%;clear:both;visibility:hidden;"></hr>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<div class="paragraph"><span>The body force in the x, y and z components can then be calculated as a function of the angular position of each leg,&nbsp; spring force, and ground reaction force. The sum of these forces for each leg then represents the force vector applies to the body in the body frame B.&nbsp;</span></div>
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+<a>
+<img src="uploads/1/1/8/8/118889699/body-force_1_orig.png" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+<div class="wsite-spacer" style="height:50px;"></div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:49.999999999999%; padding:0 15px;">
+					
+						
+
+<div class="paragraph">By specifying the robot dimensions, it is then possible to calculate the x,y,z components of the torque and force on the body relative to the body frame. The cross product of the location matrices for each leg and the force on the body yields the torque on the body. This is equivalent to taking the skew symmetric of the leg position matrices multiplied by the force matrix.&nbsp;&nbsp;</div>
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:left">
+<a>
+<img src="uploads/1/1/8/8/118889699/torque-body_orig.png" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="uploads/1/1/8/8/118889699/body-force-and-torque_orig.png" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:49.999999999999%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:30px;padding-bottom:10px;margin-left:0px;margin-right:10px;text-align:center">
+<a>
+<img src="uploads/1/1/8/8/118889699/published/legpositiondiagram.png?1524106419" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<h2 class="wsite-content-title">Results:</h2>
+
+<div class="paragraph">As expected, there is zero y-component of force. These calculations where performed in MATLAB given the specifications of our robot, and the body torque and force for each set of legs was plotted as a function of angular position.</div>
+
+<div><div style="height: 20px; overflow: hidden;"></div>
+				<div id='719348511417334123-gallery' class='imageGallery' style='line-height: 0px; padding: 0; margin: 0'>
+<div id='719348511417334123-imageContainer0' style='float:left;width:24.95%;margin:0;'><div id='719348511417334123-insideImageContainer0' style='position:relative;margin:5px;'><div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'><div class='galleryInnerImageHolder'><a href='uploads/1/1/8/8/118889699/f-145_orig.png' rel='lightbox[gallery719348511417334123]'><img src='uploads/1/1/8/8/118889699/f-145.png' class='galleryImage' _width='400' _height='300' style='position:absolute;border:0;width:100%;top:-0%;left:0%' /></a></div></div></div></div><div id='719348511417334123-imageContainer1' style='float:left;width:24.95%;margin:0;'><div id='719348511417334123-insideImageContainer1' style='position:relative;margin:5px;'><div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'><div class='galleryInnerImageHolder'><a href='uploads/1/1/8/8/118889699/f-236_orig.png' rel='lightbox[gallery719348511417334123]'><img src='uploads/1/1/8/8/118889699/f-236.png' class='galleryImage' _width='400' _height='300' style='position:absolute;border:0;width:100%;top:-0%;left:0%' /></a></div></div></div></div><div id='719348511417334123-imageContainer2' style='float:left;width:24.95%;margin:0;'><div id='719348511417334123-insideImageContainer2' style='position:relative;margin:5px;'><div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'><div class='galleryInnerImageHolder'><a href='uploads/1/1/8/8/118889699/tau-145_orig.png' rel='lightbox[gallery719348511417334123]'><img src='uploads/1/1/8/8/118889699/tau-145.png' class='galleryImage' _width='400' _height='300' style='position:absolute;border:0;width:100%;top:-0%;left:0%' /></a></div></div></div></div><div id='719348511417334123-imageContainer3' style='float:left;width:24.95%;margin:0;'><div id='719348511417334123-insideImageContainer3' style='position:relative;margin:5px;'><div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'><div class='galleryInnerImageHolder'><a href='uploads/1/1/8/8/118889699/tau-236_orig.png' rel='lightbox[gallery719348511417334123]'><img src='uploads/1/1/8/8/118889699/tau-236.png' class='galleryImage' _width='400' _height='300' style='position:absolute;border:0;width:100%;top:-0%;left:0%' /></a></div></div></div></div><span style='display: block; clear: both; height: 0px; overflow: hidden;'></span>
+</div>
+
+				<div style="height: 20px; overflow: hidden;"></div></div>
+
+<h2 class="wsite-content-title">Dynamics Equations:</h2>
+
+<div class="paragraph">The 6 equations of motions are defined for the system as followed. Further simplifications can be made as the roll and pitch angle are assumed to remain close to zero. The y-component of force was also calculated and expected to be zero.&nbsp;</div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="uploads/1/1/8/8/118889699/published/6-eom.png?1524108203" alt="Picture" style="width:345;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="uploads/1/1/8/8/118889699/3-eom_orig.png" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<div class="paragraph">Using the matrix Theta (roll pitch yaw), the following multiplication (left) can be performed to derive dynamic equations (middle) for the system. The final 6 dynamic equations which describe the system are listed on the right. This derivation was based on the work done at University of Delaware and published in "Modeling of a Hexapod Robot: Kinematic Equivalence to a Unicycle" (Panagou et al).&nbsp;</div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:79.04347826087%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="uploads/1/1/8/8/118889699/jacobian_orig.png" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="uploads/1/1/8/8/118889699/published/dynamics-3equations.png?1524107118" alt="Picture" style="width:368;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:20.95652173913%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="uploads/1/1/8/8/118889699/dynamics-6equations_orig.png" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<div><div style="height: 20px; overflow: hidden; width: 100%;"></div>
+<hr class="styled-hr" style="width:100%;"></hr>
+<div style="height: 20px; overflow: hidden; width: 100%;"></div></div>
+
+<div class="wsite-spacer" style="height:50px;"></div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -35px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:53.939393939394%; padding:0 35px;">
+					
+						
+
+<div id="354711698955449399"><div><style type="text/css">
+	#element-ca8d1618-da67-4af6-82f2-811376642996 .group-box-content {
+  clear: both;
+  float: left;
+  width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+</style><div id="element-ca8d1618-da67-4af6-82f2-811376642996" data-platform-element-id="751043798673526236-1.0.1" class="platform-element-contents">
+	<div class="group-box">
+    <div class="group-box-content">
+        <div style="width: auto"><div></div><div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:22.850678733032%; padding:0 15px;">
+					
+						
+
+<div id="345450120267737034"><div><style type="text/css">
+	#element-78d7b255-9e3a-4502-a687-09f9a197ef2a .content-color-box-wrapper {
+  padding: 0px;
+  background: #E08484;
+}
+
+</style><div id="element-78d7b255-9e3a-4502-a687-09f9a197ef2a" data-platform-element-id="250698258141446289-1.0.0" class="platform-element-contents">
+<div class="content-color-box-wrapper">
+<div style="width: 100%"><div></div><div class="paragraph" style="text-align:center;"><strong><font color="#ffffff"><font size="1">Literature Review</font></font></strong></div></div>
+</div>
+</div>
+<div style="clear:both;"></div><script type="text/javascript" class="element-script">function setupElement345450120267737034() {
+	var requireFunc = window.platformElementRequire || window.require;
+
+	// Relies on a global require, specific to platform elements
+	requireFunc([
+		'w-global',
+		'underscore',
+		'jquery',
+		'backbone',
+		'util/platform/elements/PlatformElement',
+		'util/platform/elements/PlatformElementSettings'
+	], function(
+		_W,
+		_,
+		$,
+		Backbone,
+		PlatformElement,
+		PlatformElementSettings
+	) {
+		var dependencies = null || [];
+		var platform_element_id = "250698258141446289-1.0.0";
+
+		if (typeof _W.loadedPlatformDependencies === 'undefined') {
+			_W.loadedPlatformDependencies = [];
+		}
+
+		if (typeof _W.platformElements === 'undefined') {
+			_W.platformElements = [];
+		}
+
+		if (typeof _W.platformElements[platform_element_id] === 'undefined') {
+			_W.platformElements[platform_element_id] = {};
+			_W.platformElements[platform_element_id].deferredObject = new $.Deferred();
+			_W.platformElements[platform_element_id].deferredPromise = _W.platformElements[platform_element_id].deferredObject.promise();
+		}
+
+		if(_.intersection(_W.loadedPlatformDependencies, dependencies).length !== dependencies.length){
+			_.reduce(dependencies, function(promise, nextScript){
+				_W.loadedPlatformDependencies.push(nextScript);
+				return promise.then(function(){
+					return $.getScript(nextScript);
+				});
+			}, $().promise()).then(function(){
+				_W.platformElements[platform_element_id].deferredObject.resolve();
+			});
+		}
+
+		if (dependencies.length === 0){
+			_W.platformElements[platform_element_id].deferredObject.resolve();
+		}
+
+		_W.platformElements[platform_element_id].deferredPromise.done(function(){
+			var _ElementDefinition = PlatformElement.extend({initialize:function(options){},events:{}});;
+
+			if (typeof _ElementDefinition == 'undefined' || typeof _ElementDefinition == 'null') {
+				var _ElementDefinition = PlatformElement.extend({});
+			}
+
+			var _Element = _ElementDefinition.extend({
+				initialize: function() {
+					// we still want to call the initialize function defined by the developer
+					// however, we don't want to call it until placeholders have been replaced
+					this.placeholderInterval = setInterval(function() {
+						// so use setInterval to check for placeholders.
+						if (this.$('.platform-element-child-placeholder').length == 0) {
+							clearInterval(this.placeholderInterval);
+							this.constructor.__super__.initialize.apply(this);
+						}
+					}.bind(this), 100);
+				}
+			});
+
+			_Element.prototype.settings = new PlatformElementSettings({"backgroundColor":"#E08484","spacingSize":0});
+			_Element.prototype.settings.page_element_id = "345450120267737034";
+
+			_Element.prototype.element_id = "78d7b255-9e3a-4502-a687-09f9a197ef2a";
+			_Element.prototype.user_id = "118889699";
+			_Element.prototype.site_id = "691041926121705084";
+			_Element.prototype.assets_path = "//marketplace.editmysite.com/elements/250698258141446289-1.0.0/assets/";
+			new _Element({
+				el: '#element-78d7b255-9e3a-4502-a687-09f9a197ef2a'
+			});
+		});
+	});
+
+}
+
+if (typeof document.documentElement.appReady == 'undefined') {
+	document.documentElement.appReady = 0;
+}
+
+if (document.documentElement.appReady || (window.inEditor && window.inEditor())) {
+	setupElement345450120267737034();
+} else if (document.createEvent && document.addEventListener) {
+	document.addEventListener('appReady', setupElement345450120267737034, false);
+} else {
+	document.documentElement.attachEvent('onpropertychange', function(event){
+		if (event.propertyName == 'appReady') {
+			setupElement345450120267737034();
+		}
+	});
+}
+
+</script></div></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:77.149321266968%; padding:0 15px;">
+					
+						
+
+<div class="wsite-spacer" style="height:17px;"></div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<h2 class="wsite-content-title">Literature Search</h2>
+
+<div class="wsite-spacer" style="height:18px;"></div>
+
+<div class="paragraph"><span>Our literature search focused on optimizing our design by gaining a better understanding of design parameters used by previous RHex robots or similar mechanisms. Our search was divided into three main parts: internet search, journal search, and patent search.&nbsp;</span><br />&#8203;</div>
+
+<div class="wsite-spacer" style="height:33px;"></div></div>
+    </div>
+</div>
+</div>
+<div style="clear:both;"></div><script type="text/javascript" class="element-script">function setupElement354711698955449399() {
+	var requireFunc = window.platformElementRequire || window.require;
+
+	// Relies on a global require, specific to platform elements
+	requireFunc([
+		'w-global',
+		'underscore',
+		'jquery',
+		'backbone',
+		'util/platform/elements/PlatformElement',
+		'util/platform/elements/PlatformElementSettings'
+	], function(
+		_W,
+		_,
+		$,
+		Backbone,
+		PlatformElement,
+		PlatformElementSettings
+	) {
+		var dependencies = null || [];
+		var platform_element_id = "751043798673526236-1.0.1";
+
+		if (typeof _W.loadedPlatformDependencies === 'undefined') {
+			_W.loadedPlatformDependencies = [];
+		}
+
+		if (typeof _W.platformElements === 'undefined') {
+			_W.platformElements = [];
+		}
+
+		if (typeof _W.platformElements[platform_element_id] === 'undefined') {
+			_W.platformElements[platform_element_id] = {};
+			_W.platformElements[platform_element_id].deferredObject = new $.Deferred();
+			_W.platformElements[platform_element_id].deferredPromise = _W.platformElements[platform_element_id].deferredObject.promise();
+		}
+
+		if(_.intersection(_W.loadedPlatformDependencies, dependencies).length !== dependencies.length){
+			_.reduce(dependencies, function(promise, nextScript){
+				_W.loadedPlatformDependencies.push(nextScript);
+				return promise.then(function(){
+					return $.getScript(nextScript);
+				});
+			}, $().promise()).then(function(){
+				_W.platformElements[platform_element_id].deferredObject.resolve();
+			});
+		}
+
+		if (dependencies.length === 0){
+			_W.platformElements[platform_element_id].deferredObject.resolve();
+		}
+
+		_W.platformElements[platform_element_id].deferredPromise.done(function(){
+			var _ElementDefinition = /**
+ * This is required for element rendering to be possible
+ * @type {PlatformElement}
+ */
+(function() {
+    var ColoredBox = PlatformElement.extend({
+
+        initialize: function() {
+        }
+
+    });
+
+    return ColoredBox;
+})();
+
+			if (typeof _ElementDefinition == 'undefined' || typeof _ElementDefinition == 'null') {
+				var _ElementDefinition = PlatformElement.extend({});
+			}
+
+			var _Element = _ElementDefinition.extend({
+				initialize: function() {
+					// we still want to call the initialize function defined by the developer
+					// however, we don't want to call it until placeholders have been replaced
+					this.placeholderInterval = setInterval(function() {
+						// so use setInterval to check for placeholders.
+						if (this.$('.platform-element-child-placeholder').length == 0) {
+							clearInterval(this.placeholderInterval);
+							this.constructor.__super__.initialize.apply(this);
+						}
+					}.bind(this), 100);
+				}
+			});
+
+			_Element.prototype.settings = new PlatformElementSettings({"color":"#000000","opacity":20});
+			_Element.prototype.settings.page_element_id = "354711698955449399";
+
+			_Element.prototype.element_id = "ca8d1618-da67-4af6-82f2-811376642996";
+			_Element.prototype.user_id = "118889699";
+			_Element.prototype.site_id = "691041926121705084";
+			_Element.prototype.assets_path = "//marketplace.editmysite.com/elements/751043798673526236-1.0.1/assets/";
+			new _Element({
+				el: '#element-ca8d1618-da67-4af6-82f2-811376642996'
+			});
+		});
+	});
+
+}
+
+if (typeof document.documentElement.appReady == 'undefined') {
+	document.documentElement.appReady = 0;
+}
+
+if (document.documentElement.appReady || (window.inEditor && window.inEditor())) {
+	setupElement354711698955449399();
+} else if (document.createEvent && document.addEventListener) {
+	document.addEventListener('appReady', setupElement354711698955449399, false);
+} else {
+	document.documentElement.attachEvent('onpropertychange', function(event){
+		if (event.propertyName == 'appReady') {
+			setupElement354711698955449399();
+		}
+	});
+}
+
+</script></div></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:46.060606060606%; padding:0 35px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="uploads/1/1/8/8/118889699/capture_orig.jpg" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<div class="wsite-spacer" style="height:50px;"></div>
+
+<div class="paragraph"><br /><span>&#8203;</span>During our initial internet search, we found that the RHex was originally funded by a 1998 DARPA project that lasted five years. Several prototypes were built with different goals in mind such as walking, jumping, and running. Most of these simple behaviors were achieved using open loop controls while more advanced functions such as line following and bipedal walking required feedback from sensors and on-board cameras [1]. Boston Dynamics designed their own rugged RHex robot which incorporated inverted operation, carried up to 2 kg of payload and featured a teleoperation camera [2]. The University of Pennsylvania's Kod Lab created several variations of the RHex, incorporating modular payload systems and pushing the limit of agility for outdoor rough terrain usage [3].&nbsp;<br /><br />In each different design, the overall form of the robot was mostly standard; each robot had six legs controlled by six independent actuators which were controlled by an on-board computer. The leg designs varied between robots, and therefore prompted a more thorough search for the journal and patent sections.&nbsp;<br />&#8203;<br /><span>&#8203;</span>Most of the journal research was done to examine the legs of the RHex robot, which are critical to the locomotion of this machine. Compliant legs were used on the latest variations of the RHex robots. These are legs that use the stored elastic potential energy from compression to help the robot spring forward with each step. The journal entry, Reliable Stair Climbing in the simple hexapod &lsquo;RHex&rsquo;, provides an in depth comparison of three leg designs. The compass, four bar, and half circle leg each provide unique capabilities to the hexapedal robot, but ultimately the journal concludes that the half circle leg increases stability by increasing the amount of contact points between the leg and terrain [4].<br /><span>&#8203;</span>Another journal article discusses how to identify various terrain based on the torque that each leg experiences. The torque is measured using statistical analysis of the current going to each independent motor. A threshold value for current must be provided to serve as a comparison to other potential terrains [5]. &nbsp;&nbsp;<br /><br />The journal article, Modeling of a Hexapod Robot; Kinematic Equivalence to a Unicycle, was used as our primary source to conduct a dynamic analysis. The journal article simplifies each leg to a spring, and allows for the calculation of forces and torque to be executed using MATLAB [6].<br /><span>&#8203;We started our search with Martin Buehler's patent for a hexapedal robot. Buehler is a leader in dynamic locomotion robotic technology and is one of the primary inventors of the hexapedal (RHex) robot. His patent describes the use of six separate actuators that individually control each leg to achieve a tripod gate. We then used this patent to do a category search on relevant designs including &ldquo;compliant leg&rdquo;, &ldquo;hexapedal robot&rdquo; and &ldquo;multipedes&rdquo; [7].&nbsp;</span><br /><span>&#8203;&nbsp;&nbsp; &nbsp;Patent US 7249640 B2 describes a mobile robot capable of running and jumping on rough terrains. Its unique use of &ldquo;WHEGS&rdquo;, a hybrid of wheels and legs, allows for climbing and running at sustained speeds over 10 body lengths per second. This robot also uses an alternating gait similar to the one employed in our design [8].<br />&nbsp; &nbsp;&nbsp;<br />&nbsp;&nbsp; &nbsp;Patent US 8789630 B2 outlines the design of a variable stiffness compliant leg for a hexapedal robot. The legs change length to adjust the elasticity and allows the vehicle to adapt to different terrains. Based on the patent, we found that most compliant legs are made out of a composite with high tensile strength such as Delrin or Fiberglass [9].&nbsp;</span></div>
+			</div>
+		</div>
+      </div>
+
+	</div>
+</div>
+<div class="wsite-section-wrap">
+	<div class="wsite-section wsite-body-section wsite-background-12"  >
+		<div class="wsite-section-content">
+          <div class="container">
+			<div class="wsite-section-elements">
+				<div class="wsite-spacer" style="height:50px;"></div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:49.999999999999%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="uploads/1/1/8/8/118889699/editor/asdf.jpeg?1524026677" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:49.999999999999%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="uploads/1/1/8/8/118889699/published/asfd.jpeg?1524026684" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<div class="wsite-spacer" style="height:50px;"></div>
+
+<div style="text-align:center;"><div style="height: 10px; overflow: hidden;"></div>
+<a class="wsite-button wsite-button-large wsite-button-normal" href="contact.html" >
+<span class="wsite-button-inner">Let&#x27;s start your project today</span>
+</a>
+<div style="height: 10px; overflow: hidden;"></div></div>
+
+<div class="wsite-spacer" style="height:50px;"></div>
+			</div>
+		</div>
+      </div>
+
+	</div>
+</div>
+
+</div>
+
+    </div>
+
+    <div class="footer-wrap">
+        <div class="footer">Create a <a target="_top" href="http://www.weebly.com/">free web site</a> with <a target="_top" href="http://www.weebly.com/" title="free web site">Weebly</a></div>
+    </div><!-- end footer-wrap -->
+  </div><!-- /.wrapper -->
+
+  <div id="navMobile" class="nav mobile-nav">
+    <label class="hamburger"><span></span></label>
+    <ul class="wsite-menu-default">
+    		<li id="pg140124126712379458" class="wsite-menu-item-wrap">
+    			<a
+    						href="index.html"
+    				class="wsite-menu-item"
+    				>
+    				Home
+    			</a>
+    			
+    		</li>
+    		<li id="pg528820182610916230" class="wsite-menu-item-wrap">
+    			<a
+    						href="about-the-team.html"
+    				class="wsite-menu-item"
+    				>
+    				About the Team
+    			</a>
+    			
+    		</li>
+    		<li id="pg522152728569855811" class="wsite-menu-item-wrap">
+    			<a
+    						href="cad-drawings.html"
+    				class="wsite-menu-item"
+    				>
+    				CAD Drawings
+    			</a>
+    			
+    		</li>
+    		<li id="active" class="wsite-menu-item-wrap">
+    			<a
+    						href="design-process.html"
+    				class="wsite-menu-item"
+    				>
+    				Design Process
+    			</a>
+    			
+    		</li>
+    		<li id="pg357158172116832353" class="wsite-menu-item-wrap">
+    			<a
+    						href="contact.html"
+    				class="wsite-menu-item"
+    				>
+    				Contact
+    			</a>
+    			
+    		</li>
+    </ul>
+  </div>
+
+  <script type="text/javascript" src="files/theme/plugins.js"></script>
+  <script type="text/javascript" src="files/theme/custom.js"></script>
+
+		
+	</body>
+</html>

@@ -2,23 +2,11 @@ name: "Yay internet!"
 output_dir: "."
 navbar:
   title: "Alicia B. Dagle"
-  left:
-    -text: "Resume"
-    href: resume.html
-    #-text: "Education"
-    #href: education.html
-    #-text: "Presentations"
-    #href: presentations.html
-    #text: "Publications"
-    #href: publications.html
-    #text: "Projects"
-    #href: projects.html
-    #text: "Interests"
-    #href: intersts.html
-
   right:
     - text: "About"
       href: about.html
+    - text: "Resume"
+      href: resume.html
     - icon: fa-envelope fa-lg
       href: mailto:<alicia.dagle@columbia.edu>
     - icon: fa-github fa-lg
@@ -28,4 +16,3 @@ navbar:
 output:
   html_document:
     theme: flatly
-    #cerulean

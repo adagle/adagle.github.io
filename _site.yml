@@ -3,8 +3,8 @@ output_dir: "."
 navbar:
   title: "Alicia B. Dagle"
   left:
-    - text: "Resume"
-      href: resume.html
+    - text: "Research"
+      href: Research.html
     - text: "Other Interests"
       href: interests.html
   right:

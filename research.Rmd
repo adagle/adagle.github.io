@@ -1,0 +1,42 @@
+
+---
+title: "Research Projects"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+# Columbia University, New York, NY
+### Living Materials Lab
+##### <u>Advisor</u>: Dr. Karen Kasza
+
+
+# Wellman Institute for Photomedicine, Massachusetts General Hospital, Cambridge, MA
+### HST Summer Institute for Biomedical Optics, Research Experience for Undergraduates (REU)  
+##### <u>Advisor</u>: Dr. Seok-Hyun (Andy) Yun
+
+Operated laser and Brillouin microscopy equipment, cultured cells, performed MATLAB analysis. Investigated the Brillouin stiffness measurements of cells under varying osmotic compression conditions. Successfully visualized intracellular components by mapping Brillouin shift. 
+
+
+
+
+# Johns Hopkins University, Baltimore, MD 
+### Computational Sensing and Medical Robotics (CSMR) REU 
+#####<u>Advisor</u>:  Dr. Muyinatu A. Lediju Be
+
+Researched energy safety limitations and feasibility of implementing photoacoustic imaging to visualize the internal carotid artery during endonasal transsphenoidal surgery for pituitary tumor resection. Constructed phantom for testing, collected photoacoustic data, performed MATLAB analysis, determined the energy required for vessel visualization, and compared the required energy to fluence safety limits. 
+
+
+
+
+# Worcester Polytechnic Institute, Worcester, MA
+### Bioengineering REU 
+##### <u>Advisor</u>: Dr. Qi Wen
+
+Researched the effect of vimentin on cellular traction force, spreading area, and stiffness. Cultured cells, prepared polyacrylamide gels with fluorescent beads, captured images with a fluorescent microscope, and performed traction force microscopy (TFM) with a 3-D finite element model utilizing MATLAB and ANSYS. Applied atomic force microscopy to examine stiffness of cells. 
+
+# Clark University, Worcester, MA
+### Experimental Condensed Matter Physics Lab 
+##### <u>Advisor</u>: Dr. Michael Boyer 
+Examined surface properties of cuprous oxide nanocubes to better understand their catalytic behavior. Employed atomic force microscopy (AFM), scanning tunneling microscopy (STM), and scanning electron microscopy (SEM) to determine band-gap and visualize surface features. 

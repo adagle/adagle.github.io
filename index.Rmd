@@ -8,6 +8,11 @@ output:
 
 # This is Alicia's awesome website
 
+My resume can be found [here](resume.html)
+
+
+<img src="files/AliciaDagle_Resume.pdf" alt="some text"  width="4200" height="4200">
+
 ![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
 
 

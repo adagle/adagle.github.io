@@ -1,0 +1,13 @@
+---
+title: "My awesome website"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+# Resume
+
+
+
+![Resume](./files/AliciaDagle_Resume.pdf){width=65%}

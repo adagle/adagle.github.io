@@ -1,0 +1,29 @@
+---
+title: "random"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+# This is Alicia's awesome website
+
+My resume can be found [here](resume.html)
+
+
+<img src="files/AliciaDagle_Resume.pdf" alt="some text"  width="4200" height="4200">
+
+![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
+
+
+# Let's add some links.
+
+You can learn about me [here](about.html)
+
+I often use [google](https://www.google.com) to do **data science**.
+
+# Let's add an image:
+Here is my dog
+
+
+![](images/Tucker.jpg)

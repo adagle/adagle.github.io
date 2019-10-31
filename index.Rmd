@@ -6,24 +6,13 @@ output:
     toc_float: true
 ---
 
-# This is Alicia's awesome website
+# About Me:
 
-My resume can be found [here](resume.html)
+![](images/AliciaDagle_LabPhoto.jpg)
+My research interests include translational science and technology that drive medical knowledge, treatment and device development. I currently work in the [Kasza Living Material Lab](https://http://www.kaszalab.com) at Columbia University, investigating the role of mechanical forces in embryonic development.
 
+I graduated from a combined proram with a BS in Mechanical Engineering from Columbia University and a BA in Physics from Clark University in 2018. I will graduate with my MS in Mechnical Engineering in December 2019 and continue in the MS/PhD program at Columbia University. 
 
-<img src="files/AliciaDagle_Resume.pdf" alt="some text"  width="4200" height="4200">
+I am a second year MS/PhD candidate at Columbia University with a longstanding interest in medical research and technology.
 
-![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
-
-
-# Let's add some links.
-
-You can learn about me [here](about.html)
-
-I often use [google](https://www.google.com) to do **data science**.
-
-# Let's add an image:
-Here is my dog
-
-
-![](images/Tucker.jpg)
+My full CV is available [here](resume.html).

@@ -15,4 +15,4 @@ I graduated from a combined proram with a BS in Mechanical Engineering from Colu
 
 I am a second year MS/PhD candidate and NSF Fellow at Columbia University with a longstanding interest in medical research and technology.
 
-My full Resume is available [here](AliciaDagle_Resume.pdf).
+My full Resume is available [here](.files/AliciaDagle_Resume.pdf).

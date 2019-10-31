@@ -1,5 +1,5 @@
 ---
-title: "Other Interests"
+#title: "Other Interests:"
 output: 
   html_document:
     toc: true
@@ -12,3 +12,5 @@ Outside of research and studying, I am heavily involved in competative ballroom 
 
 
 <img src="images/StandardPhotoCrop.jpg" style="width:40%; border:10px solid; margin-right: 20px" align="left">
+
+<img src="images/SmoothPhoto.jpg" style="width:40%; border:10px solid; margin-right: 20px" align="right">

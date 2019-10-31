@@ -10,4 +10,4 @@ output:
 
 
 
-![Resume](./files/AliciaDagle_Resume.pdf){width=80%}
+![Resume](./files/AliciaDagle_Resume.pdf){width=90%}

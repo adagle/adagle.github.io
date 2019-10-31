@@ -1,0 +1,29 @@
+---
+title: "Presentations"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+
+#### <u>Invited Talks:</u>
+
+“Characterizing Cell Responses to Mechanical Forces generated during Epithelial Tissue Morphogenesis in Drosophila Melanogaster.” Powerpoint presented at the Clark University Physics Colloquium. Worcester, MA, October 2019. 
+
+
+“Experimental Analysis of Energy Safety Limits for Photoacoustic-Guided Endonasal Surgery.” Poster presented at the Council on Undergraduate Research (CUR) Symposium. Arlington, VA, October 2015. 
+
+
+“Determining the Effect of Vimentin on Cell Traction Force and Stiffness.” Poster presented at Biomedical Engineering Society (BMES) Conference. San Antonio, TX, October 2014.
+
+
+
+#### <u>Campus Talks:</u>
+“Probing cellular mechanical properties with noncontact Brillouin Microscopy.” Poster presented at HST Summer Institute for Biomedical Optics. Boston, MA, August 2016. 
+
+
+“Experimental Analysis of Energy Safety Limits for Photoacoustic-Guided Endonasal Surgery.” Poster presented at Johns Hopkins University. Baltimore, MD, August 2015. 
+
+
+“Determining the Effect of Vimentin on Cell Traction Force and Stiffness.” Poster presented at Worcester Polytechnic Institute. Worcester, MA, August 2014. 

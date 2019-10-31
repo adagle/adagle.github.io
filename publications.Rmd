@@ -1,0 +1,9 @@
+---
+title: "Publications"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+M. A. Lediju Bell, **A.B. Dagle**, P. Kazanzides, and E. Boctor. Experimental Assessment of Energy Requirements and Tool Tip Visibility for Photoacoustic-Guided Endonasal Surgery, Proc. SPIE 9708 Photons Plus Ultrasound: Imaging and Sensing, San Francisco, CA, March 2016. 

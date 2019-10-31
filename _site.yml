@@ -12,8 +12,6 @@ navbar:
     - text: "Other Interests"
       href: interests.html
   right:
-    - text: "About"
-      href: about.html
     - icon: fa-envelope fa-lg
       href: mailto:<alicia.dagle@columbia.edu>
     - icon: fa-github fa-lg

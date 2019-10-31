@@ -7,7 +7,7 @@ output:
 ---
 
 
-#### <u>Invited Talks:</u>
+### <u>Invited Talks:</u>
 
 “Characterizing Cell Responses to Mechanical Forces generated during Epithelial Tissue Morphogenesis in Drosophila Melanogaster.” Powerpoint presented at the Clark University Physics Colloquium. Worcester, MA, October 2019. 
 
@@ -19,7 +19,7 @@ output:
 
 
 
-#### <u>Campus Talks:</u>
+### <u>Campus Talks:</u>
 “Probing cellular mechanical properties with noncontact Brillouin Microscopy.” Poster presented at HST Summer Institute for Biomedical Optics. Boston, MA, August 2016. 
 
 

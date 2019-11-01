@@ -12,10 +12,14 @@ navbar:
     - text: "Other Interests"
       href: interests.html
   right:
-    - text: "Problem 2"
-      href: problem2.html
-    - text: "Plotly"
-      href: plotly.html
+    - text: "Examples"
+      menu:
+      - text: "Problem 2"
+        href: problem2.html
+      - text: "Plotly"
+        href: plotly.html
+      - text: "Dashboard"
+        href: dashboard.html
     - icon: fa-envelope fa-lg
       href: mailto:<alicia.dagle@columbia.edu>
     - icon: fa-github fa-lg

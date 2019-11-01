@@ -8,7 +8,7 @@ output:
 
 # Ballroom Dancing
 
-Outside of research and studying, I am heavily involved in competative ballroom dance. I compete International Standard and American Smooth Styles at the Prechampionship level in collegiate and national competitions.
+Outside of research and academia, I am heavily involved in competitive ballroom dance. I compete International Standard and American Smooth Styles at the Prechampionship level in both collegiate and national competitions.
 
 
 <img src="images/StandardPhotoCrop.jpg" style="width:40%; border:10px solid; margin-right: 20px" align="left">

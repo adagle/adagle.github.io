@@ -12,10 +12,10 @@ navbar:
     - text: "Other Interests"
       href: interests.html
   right:
-    - text: "Examples"
+    - text: "Homework & Examples"
       menu:
-      - text: "Problem 2"
-        href: problem2.html
+      - text: "HW 4: Problem 2"
+        href: HW4_P2_flexydashboard.html
       - text: "Plotly"
         href: plotly.html
       - text: "Dashboard"

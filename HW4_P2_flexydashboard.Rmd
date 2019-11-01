@@ -1,0 +1,127 @@
+---
+title: "Homework 4: Problem 2 (Data from NYC Restaurant Dataset)"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(viridis)
+library(p8105.datasets)
+library(plotly)
+```
+
+
+```{r first_clean, results = FALSE, error = FALSE}
+#Select a reasonably sized dataset
+#general cleaning
+data("rest_inspec")
+rest_inspec = rest_inspec %>% 
+  mutate(
+    boro = as.factor(boro),
+    cuisine_description = as.factor(cuisine_description),
+    grade = as.factor(grade),
+    dba = as.factor(dba),
+    inspection_type = as.factor(inspection_type),
+    zipcode = as.factor(zipcode),
+    score = as.numeric(score)
+  ) %>% 
+    separate(grade_date, into = c("grade_year", "grade_month", "grade_day"), sep = "\\-")
+  
+#overview of some data
+rest_inspec %>% 
+  group_by(boro, grade) %>% 
+  summarize(n = n()) %>% 
+  spread(key = grade, value = n)
+```
+
+
+```{r ScoreDistribution_neighborhood}
+#box plot showing distribution of scores by neighborhood, grades and restaurant names labeled for outliers
+
+#Italian restaurants, all boros 2017
+boro_comparison = rest_inspec %>% 
+    filter(
+    !is.na(grade),
+    cuisine_description == "Italian",
+    grade_year == '2017'
+    ) %>% 
+  mutate(text_label = str_c("Restaurant Name: ", dba, "\nGrade: ", grade, "\nViolation Description: ", violation_description))
+```
+
+
+```{r Grades2017_Italian_Manhattan}
+#Create a smaller dataset to work with
+  #2017 restaurant inpections in prominant Upper West Side zipcodes, filtering out NA grades
+
+grade_2017 = rest_inspec %>% 
+    filter(
+    !is.na(grade),
+    boro == "MANHATTAN",
+    cuisine_description == "Italian",
+    grade_year == '2017',
+    zipcode %in% c("10023","10024", "10025", "10027") #main upper west side zipcodes
+    )
+
+```
+
+
+
+
+```{r ScoreDistribution_GradeA}
+#look at score distrubution for grade A
+grade_score_comparison = rest_inspec %>% 
+  filter(
+    grade == "A", #ony look at A letter grades
+    boro == "MANHATTAN" #in Manhattan
+  )%>% 
+  mutate(
+    score_range = recode(score, '0' = "0-4", '1' = "0-4", '2' = "0-4", '3' = "0-4", '4' = "0-4",'5' = "5-9",'6' = "5-9",'7' = "5-9",'8' = "5-9",'9' = "5-9",'10' = "10-14",'11' = "10-14",'12' = "10-14",'13' = "10-14",'14' = "10-14",'15' = "15-19",'16' = "15-19",'17' = "15-19",'18' = "15-19",'19' = "15-19", '20' = "20-24",'21' = "20-24",'22' = "20-24",'23' = "20-24",'24' = "20-24",'25' = "25-29",'26' = "25-29",'27' = "25-29",'28' = "25-29",'29' = "25-29", '30' = "30-34",'31' = "30-34",'32' = "30-34"),
+    score_range = forcats::fct_relevel(score_range, c("0-4", "5-9","10-14", "15-19","20-24", "25-29", "30-34"))
+  ) %>% 
+ select(dba, score, score_range) %>% 
+  count(score_range)
+```
+
+
+
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Italian Restaurant Distributions By Borough (2017)
+
+```{r}
+boro_comparison %>% 
+  mutate(neighborhood = fct_reorder(boro, score)) %>% 
+  plot_ly(y = ~score, color = ~boro, type = "box", colors = "Set2", text = ~text_label)
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Italian Restaurants Score Distribution in Upper West Side (2017)
+
+```{r}
+grade_2017 %>%
+  mutate(text_label = str_c("Restaurant Name: ", dba, "\nGrade: ", grade, "\nViolation Description: ", violation_description)) %>% 
+plot_ly(x = ~dba, y = ~score, type = "scatter", mode = "markers",
+    color = ~grade, text = ~text_label, alpha = 0.5)
+
+```
+
+### Letter Grade A Score Distribution
+
+
+```{r}
+#Bar chart with observations per score grouping
+grade_score_comparison %>% 
+  plot_ly(x = ~score_range, y = ~n, type= "bar")
+
+```
+

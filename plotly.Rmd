@@ -2,6 +2,7 @@
 title: "Plotly Example"
 output: 
   html_document:
+    code_folding: hide
     toc: true
     toc_float: true
 ---
@@ -21,7 +22,7 @@ library(plotly)
 # Let's make some graphs
 
 
-```{r}
+```{r message = FALSE}
 #Select a reasonably sized dataset
 set.seed(1)
 
@@ -42,7 +43,7 @@ nyc_airbnb =
 
 # Let's make a scatter plot!
 
-```{r}
+```{r message = FALSE}
 nyc_airbnb %>%
   mutate(text_label = str_c("Price: $", price, '\nRating: ', rating)) %>% 
   plot_ly(
@@ -55,7 +56,7 @@ nyc_airbnb %>%
 # Bar charts!
 
 In plotly, to get the bar to go up to the number, we need to create a dataset that has the y values that the bar go up to.
-```{r}
+```{r message=FALSE}
 #Bar chart with observations per neighborhood
 nyc_airbnb %>% 
   count(neighbourhood) %>% 

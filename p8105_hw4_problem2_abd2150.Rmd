@@ -1,0 +1,52 @@
+---
+title: "p8105_hw4_abd2150"
+author: "Alicia Dagle"
+date: "October 31, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+
+library(tidyverse)
+library(p8105.datasets)
+knitr::opts_chunk$set(
+	echo = TRUE,
+	warning = FALSE,
+	fig.width = 8, 
+  fig.height = 6,
+  out.width = "90%"
+)
+options(
+  ggplot2.continuous.colour = "viridis",
+  ggplot2.continuous.fill = "viridis"
+)
+scale_colour_discrete = scale_colour_viridis_d
+scale_fill_discrete = scale_fill_viridis_d
+theme_set(theme_minimal() + theme(legend.position = "bottom"))
+
+```
+
+# Problem 1
+
+Website created and available at https://adagle.github.io
+
+# Problem 2
+
+```{r}
+data("rest_inspec")
+rest_inspec %>% 
+  group_by(boro, grade) %>% 
+  summarize(n = n()) %>% 
+  spread(key = grade, value = n)
+```
+
+```{r}
+rest_inspec %>% 
+  filter(grade != is.na(grade)) %>% 
+  separate(grade_date, into = c("grade_year", "grade_month_day"), sep = "\\-") %>%
+  mutate(
+    grade_month_day=str_replace(grade_month_day, "\\-","")
+  )
+
+```
+
